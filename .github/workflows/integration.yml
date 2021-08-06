@@ -1,12 +1,12 @@
 name: CI with Node.js
 
 on:
-  pull_request:
+  push:
     branches: [ main ]
 
 jobs:
-  ci_to_master:
-    runs_on: debian-latest
+  ci_to_main:
+    runs_on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
