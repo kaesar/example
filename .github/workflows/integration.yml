@@ -2,7 +2,7 @@ name: CI with Node.js
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   ci_to_master:
